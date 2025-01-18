@@ -267,4 +267,29 @@ const renderLocations = () => {
 // Call the function on page load
 document.addEventListener('DOMContentLoaded', renderLocations);
 
+// ...existing code...
+
+const locationsList = document.getElementById('locations-list');
+const viewMoreButton = document.querySelector('.view-more-button');
+let locationsShown = 6;
+
+function viewMoreLocations() {
+    const locations = locationsList.children;
+    for (let i = locationsShown; i < locationsShown + 6 && i < locations.length; i++) {
+        locations[i].style.display = 'block';
+    }
+    locationsShown += 6;
+    if (locationsShown >= locations.length) {
+        viewMoreButton.style.display = 'none';
+    }
+}
+
+// Initially show only the first 6 locations
+document.addEventListener('DOMContentLoaded', () => {
+    const locations = locationsList.children;
+    for (let i = 6; i < locations.length; i++) {
+        locations[i].style.display = 'none';
+    }
+});
+
 
