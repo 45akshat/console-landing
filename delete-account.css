@@ -1,0 +1,197 @@
+/* General Styles */
+body {
+    margin: 0;
+    font-family: 'Poppins', cursive;
+    line-height: 1.6;
+    color: #fff;
+    background-color: #000;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Header */
+header {
+    background: transparent;
+    color: white;
+    padding: 1rem 0;
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    transition: background 0.3s ease, color 0.3s ease;
+}
+
+header .container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 1rem;
+}
+
+header .container h1 {
+    font-size: 16px;
+}
+
+header ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+header ul li {
+    margin-left: 1rem;
+}
+
+header ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: 400;
+    transition: color 0.3s ease;
+}
+
+header ul li a:hover {
+    color: #0017e9;
+}
+
+.hamburger {
+    display: none;
+    cursor: pointer;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.hamburger .bar {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    transition: background-color 0.3s ease;
+}
+
+.hamburger:hover .bar {
+    background-color: #0017e9;
+}
+
+/* Delete Account Section */
+.delete-account {
+    padding: 2rem 1rem;
+    background-color: #000;
+    color: white;
+    text-align: center;
+}
+
+.delete-account .container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.delete-account h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.delete-account p {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+}
+
+.delete-account a {
+    color: #007bff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.delete-account a:hover {
+    color: #0056b3;
+}
+
+/* Footer */
+footer {
+    background-color: #000;
+    color: #fff;
+    padding: 20px 10px;
+    text-align: center;
+    font-size: 0.9rem;
+    border-top: 4px solid #151515;
+}
+
+footer .footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+footer p {
+    margin: 5px 0;
+    line-height: 1.5;
+}
+
+footer a {
+    color: #007bff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+footer a:hover {
+    color: #00aaff;
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 768px) {
+    header .container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    header ul {
+        flex-direction: column;
+        display: none;
+        width: 100%;
+        background: #000;
+        padding: 1rem 0;
+    }
+
+    header ul li {
+        margin: 0.5rem 0;
+    }
+
+    header ul.show {
+        display: flex;
+    }
+
+    .hamburger {
+        display: flex;
+    }
+
+    .delete-account h2 {
+        font-size: 2rem;
+    }
+
+    .delete-account p {
+        font-size: 0.9rem;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    header .container h1 {
+        font-size: 14px;
+    }
+
+    header ul li a {
+        font-size: 0.9rem;
+    }
+
+    .delete-account h2 {
+        font-size: 1.8rem;
+    }
+
+    .delete-account p {
+        font-size: 0.85rem;
+    }
+
+    footer {
+        font-size: 0.8rem;
+    }
+}
