@@ -281,6 +281,25 @@ header ul li.franchise-button a:hover {
     transform: scale(1.1);
 }
 
+.hero-banner .app-download {
+    margin-top: 20px;
+    display: flex;
+    gap: 10px;
+}
+
+.hero-banner .app-download a img {
+    width: auto;
+    height: 40px;
+    padding: 3px 8px;
+    background-color: white;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.hero-banner .app-download a img:hover {
+    transform: scale(1.05);
+}
+
 /* Locations Section */
 .locations {
     padding: 2rem 3rem;
