@@ -1,113 +1,46 @@
-.form-container {
-    background: #1e1e1e;
+
+#darkForm {
+
+    background-color: #0b0b0b;
     padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
-    width: 300px;
+    max-width: 500px;
+    margin: 8px;
+
+    margin: 20px auto;
+    margin-top: 30%;
+    color: #fff;
 }
-.form-group {
+
+#darkForm .form-group {
     margin-bottom: 15px;
 }
-label {
+
+#darkForm label {
     display: block;
-    font-size: 14px;
     margin-bottom: 5px;
+    font-weight: bold;
 }
-input, textarea {
-    width: 100%;
-    padding: 8px;
-    background: #2a2a2a;
-    border: 1px solid #444;
-    border-radius: 5px;
-    color: #fff;
-    outline: none;
-}
-button {
-    width: 100%;
+
+#darkForm input,
+#darkForm textarea {
+    width: 90%;
     padding: 10px;
-    background: #6200ea;
+    border: 1px solid #333;
+    border-radius: 5px;
+    background-color: #333;
+    color: #fff;
+}
+
+#darkForm button {
+    background-color: #002afe;
+    color: #fff;
+    padding: 10px 20px;
     border: none;
     border-radius: 5px;
-    color: #fff;
-    font-size: 16px;
     cursor: pointer;
-    transition: 0.3s;
-}
-button:hover {
-    background: #3700b3;
-}
-
-body {
-    margin: 0;
-    font-family: 'Poppins', cursive;
-    line-height: 1.6;
-    color: #fff;
-    background-color: #000;
-    transition: background-color 0.3s ease, color 0.3s ease;
-}
-
-header {
-    background: transparent;
-    color: white;
-    padding: 1rem 0;
-    position: absolute;
-    width: 100%;
-    top: 0;
-    left: 0;
-    z-index: 10;
-    transition: background 0.3s ease, color 0.3s ease;
-}
-
-header .container {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    max-width: 1200px;
-    margin: auto;
-    padding: 0 1rem;
-}
-
-header .container h1 {
-    font-size: 16px;
-}
-
-header ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    display: flex;
-}
-
-header ul li {
-    margin-left: 1rem;
-}
-
-header ul li a {
-    color: white;
-    text-decoration: none;
-    font-weight: 400;
-    transition: color 0.3s ease;
-}
-
-header ul li a:hover {
-    color: #0017e9;
-}
-
-.hamburger {
-    display: none;
-    cursor: pointer;
-    flex-direction: column;
-    gap: 5px;
-}
-
-.hamburger .bar {
-    width: 25px;
-    height: 3px;
-    background-color: white;
     transition: background-color 0.3s ease;
 }
 
-.hamburger:hover .bar {
-    background-color: #0017e9;
+#darkForm button:hover {
+    background-color: #0056b3;
 }
