@@ -570,3 +570,42 @@ footer a {
 footer a:hover {
     color: #00aaff; /* Slightly lighter color on hover */
 }
+
+
+
+.scroll-container {
+    width: 100%;
+    overflow: hidden;
+    background: linear-gradient(to right, #5e00fa, #b128fa);
+    padding: 10px 0;
+    white-space: nowrap;
+    position: relative;
+}
+
+.scroll-text {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+    animation: scroll 10s linear infinite;
+}
+
+@keyframes scroll {
+    from {
+        transform: translateX(100%);
+    }
+    to {
+        transform: translateX(-100%);
+    }
+}
+
+.icon {
+    width: 20px;
+    height: 20px;
+    fill: white;
+    vertical-align: middle;
+}
+
+

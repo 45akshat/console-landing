@@ -1,13 +1,17 @@
 #darkForm {
 
-    background-color: #0b0b0b;
     padding: 20px;
     max-width: 500px;
     margin: 8px;
-
+    font-family: 'poppins';
     margin: 20px auto;
-    margin-top: 30%;
+    margin-top: 20%;
     color: #fff;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+h2{
+    font-size: 26px;
 }
 
 #darkForm .form-group {
@@ -25,17 +29,21 @@
     width: 90%;
     padding: 10px;
     border: 1px solid #333;
-    border-radius: 5px;
+    border-radius: 0;
     background-color: #333;
+    font-family: 'poppins';
     color: #fff;
 }
 
 #darkForm button {
-    background-color: #002afe;
+    background: linear-gradient(45deg, #a300fe, #0056b3);
     color: #fff;
-    padding: 10px 20px;
+    padding: 15px 50px;
+    font-size: 16px;
+    font-weight: 600;
+
     border: none;
-    border-radius: 5px;
+    border-radius: 0;
     cursor: pointer;
     transition: background-color 0.3s ease;
 }
@@ -46,6 +54,39 @@
 
 @media (min-width: 768px) {
     #darkForm {
-        margin-top: 20%;
+        margin-top: 10%;
     }
+}
+
+body {
+    background-image: url('https://img.freepik.com/free-vector/abstract-black-texture-background-hexagon_206725-413.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+
+.container{
+    padding: 20px;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.pointer {
+    width: 90%;
+    display: flex;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    margin: 15px 0;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+    font-size: 1rem;
+}
+.pointer:hover {
+    transform: scale(1.05);
+}
+.pointer svg {
+    margin-right: 10px;
 }

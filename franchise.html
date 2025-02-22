@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="franchise.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
 </head>
-<body>
+<body >
     <header>
         <div class="container">
             <h1>Console Gaming</h1>
@@ -46,27 +46,61 @@
 
     
     <form id="darkForm">
+        <div style="display: flex; flex-direction: row; align-items: center; justify-content: left;">
+                    <img width="50" style="margin-right: 10px;" src="images/logo.png" alt="Console Gaming Logo" class="logo">
+
+        <h2>Franchise Enquiry</h2>
+        </div>
+
         <div class="form-group">
             <label for="name">Name</label>
-            <input type="text" id="name" required>
+            <input type="text" id="name" placeholder="Enter your name" required>
         </div>
         <div class="form-group">
             <label for="email">Email</label>
-            <input type="email" id="email" required>
+            <input type="email" id="email" placeholder="Enter your email" required>
         </div>
         <div class="form-group">
             <label for="phone">Phone Number</label>
-            <input type="tel" id="phone" required>
+            <input type="tel" id="phone" placeholder="Enter your phone number" required>
         </div>
         <div class="form-group">
             <label for="note">Note</label>
-            <textarea id="note" rows="3"></textarea>
+            <textarea id="note" rows="3" placeholder="Enter your note"></textarea>
         </div>
         <button type="submit">Submit</button>
     </form>
 
-
-    
+    <div class="container">
+        <h2>Why Partner with Us?</h2>
+        <div class="pointer">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M20 6L9 17l-5-5" stroke="#f39c12" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+            High ROI with low investment
+        </div>
+        <div class="pointer">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M20 6L9 17l-5-5" stroke="#f39c12" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+            Strong brand presence & marketing support
+        </div>
+        <div class="pointer">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M20 6L9 17l-5-5" stroke="#f39c12" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+            Comprehensive training & operational assistance
+        </div>
+    </div>
+    <footer>
+        <div class="footer-container">
+            <p>&copy; 2025 Console Gaming. All rights reserved.</p>
+            <p>
+                <a href="privacy.html">Privacy Policy</a> | 
+                <a href="terms.html">Terms of Service</a>
+            </p>
+        </div>
+    </footer>
 
     <script>
         document.getElementById('darkForm').addEventListener('submit', async function(event) {
